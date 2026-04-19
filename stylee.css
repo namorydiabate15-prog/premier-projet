@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+    justify-content: space-between;
+}
+header .logo {
+    font-size: 25px;
+
+}
+header .logo span {
+    color: aqua;
+}
+header .menu a {
+    position: relative;
+    margin: 0 10px;
+    text-decoration: 0;
+    transition: 0.5s;
+}
+header .menu a:before{
+    position: absolute;
+    top: -2px;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: aqua;
+    transition: 0.5s;
+}
+header .menu a:hover:before {
+    width: 100%;
+}
+header .menu a:hover{
+    color: black;
+}
+
+
+.info{
+    background-color: aqua;
+    background-position: center;
+    text-align: center;
+
+   
+   }
+.contener{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+
+.card {
+  width: 350px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  opacity: 0.85;
+
+  transition: all 0.3s ease;
+}
+
+
+.card:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.bouton{
+    background: linear-gradient(#8e86b5,#acaeed);
+     color: white;
+     border-radius: 50px;
+     padding: 10px 20px;
+     
+
+}
+.bouton {
+    text-decoration: none;
+    text-align: center;
+
+
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: aqua;
+    color: black;
+}
